@@ -1,5 +1,10 @@
 package com.nexcart.nexcart_backend.entity;
 
-public class Product {
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+@Entity
+public class Product {
+    @Id
+Long productId;
 }
