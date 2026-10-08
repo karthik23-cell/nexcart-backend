@@ -1,10 +1,16 @@
 package com.nexcart.nexcart_backend.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Product {
     @Id
-Long productId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long productId;
+    private String name;
+    private int stock;
+
 }
